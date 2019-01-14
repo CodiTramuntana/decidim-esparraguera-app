@@ -1,0 +1,1 @@
+$("#result_decidim_accountability_status_id").change(function(){const s=$(this).find(":selected").data("progress");(s||0===s)&&$("#result_progress").val(s)});

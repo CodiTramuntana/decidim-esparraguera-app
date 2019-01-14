@@ -1,0 +1,17 @@
+es:
+  decidim:
+    authorization_handlers:
+      census_authorization_handler:
+        name: Padrón
+        explanation: Padrón de Esparreguera
+      decidim:
+        verifications:
+          authorizations:
+            new:
+              name: Padrón
+  census_authorization:
+    form:
+      date_select:
+        day: Dia
+        month: Mes
+        year: Año

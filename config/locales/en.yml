@@ -1,0 +1,17 @@
+en:
+  decidim:
+    authorization_handlers:
+      census_authorization_handler:
+        name: Census
+        explanation: Esparreguera Census
+      decidim:
+        verifications:
+          authorizations:
+            new:
+              name: Census
+  census_authorization:
+    form:
+      date_select:
+        day: Day
+        month: Month
+        year: Year

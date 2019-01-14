@@ -1,0 +1,1 @@
+"use strict";$(function(){!function(i){var s=$("#processes-grid"),t=s.find(".loading"),r=".order-by__tabs a";t.hide(),s.on("click",r,function(a){var n=$(a.target),e=s.find(".card-grid .column");$(r).removeClass("is-active"),n.addClass("is-active"),e.hide(),t.show(),i.history&&i.history.pushState(null,null,n.attr("href"))})}(window)});

@@ -1,0 +1,1 @@
+"use strict";$(function(){var e=$("#participatory_process_scopes_enabled"),t=$("#participatory_process_scope_id");$(".edit_participatory_process, .new_participatory_process").length>0&&(e.on("change",function(e){var r=e.target.checked;t.attr("disabled",!r)}),t.attr("disabled",!e.prop("checked")))});

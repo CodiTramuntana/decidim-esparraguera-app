@@ -1,0 +1,1 @@
+"use strict";$(function(){window.DecidimProposals=window.DecidimProposals||{},window.DecidimProposals.bindProposalAddress=function(){var o=$("#proposal_has_address"),i=$("#address_input");if(o.length>0){var s=function(){o[0].checked?i.show():i.hide()};s(),o.on("change",s)}new window.Decidim.Select2Field($("#proposal_scope_id"))},window.DecidimProposals.bindProposalAddress()});

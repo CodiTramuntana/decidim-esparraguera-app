@@ -1,0 +1,17 @@
+ca:
+  decidim:
+    authorization_handlers:
+      census_authorization_handler:
+        name: Padró
+        explanation: Padró d'Esparreguera
+      decidim:
+        verifications:
+          authorizations:
+            new:
+              name: Padró
+  census_authorization:
+    form:
+      date_select:
+        day: Dia
+        month: Mes
+        year: Any

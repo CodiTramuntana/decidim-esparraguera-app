@@ -1,0 +1,1 @@
+"use strict";$(function(){var n=$(".edit_meeting_registrations");n.length>0&&function(){var e=n.find("#meeting_registrations_enabled"),i=n.find("#meeting_available_slots"),t=function(){var t=e.prop("checked");i.attr("disabled",!t),n.find(".editor-container").each(function(n,e){Quill.find(e).enable(t)})};e.on("change",t),t()}()});
