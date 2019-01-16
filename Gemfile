@@ -25,3 +25,7 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console"
 end
+
+group :production do
+  gem "sentry-raven"
+end
