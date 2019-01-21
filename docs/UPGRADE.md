@@ -1,5 +1,12 @@
 # HOW TO UPGRADE DECIDEIX.ESPARRAGUERA.CAT
 
+## Decidim 0.11.2
+- Change DECIDIM_VERSION to the next stable version, in that cas 0.11.2
+- bundle update decidim
+- bin/rails decidim:upgrade
+- bin/rails db:migrate
+- check the changelog changes for any important change https://github.com/decidim/decidim/blob/0.11-stable/CHANGELOG.md
+
 ## Decidim 0.10.1
 - Change DECIDIM_VERSION to the next stable version, in that cas 0.10.1
 - bundle update decidim
