@@ -1,5 +1,20 @@
 # HOW TO UPGRADE DECIDEIX.ESPARRAGUERA.CAT
 
+## Decidim 0.14.4
+- Change DECIDIM_VERSION to the next stable version, in that case 0.14.4
+- bundle update decidim
+- bin/rails decidim:upgrade
+- bin/rails db:migrate
+- check the changelog changes for any important change https://github.com/decidim/decidim/blob/0.14-stable/CHANGELOG.md
+- Execute
+```
+Decidim::User.find_each(&:add_to_index_as_search_resource)
+```
+```
+Decidim::Gamification.reset_badges
+```
+
+
 ## Decidim 0.13.1
 - Change DECIDIM_VERSION to the next stable version, in that case 0.13.1
 - bundle update decidim
