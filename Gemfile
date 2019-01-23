@@ -15,6 +15,7 @@ gem 'figaro', '>= 1.1.1'
 
 gem 'delayed_job_active_record'
 gem "daemons"
+gem 'whenever', require: false
 
 group :development, :test do
   gem "byebug", platform: :mri
