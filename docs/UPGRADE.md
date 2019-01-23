@@ -1,5 +1,18 @@
 # HOW TO UPGRADE DECIDEIX.ESPARRAGUERA.CAT
 
+## Decidim 0.13.1
+- Change DECIDIM_VERSION to the next stable version, in that case 0.13.1
+- bundle update decidim
+- bin/rails decidim:upgrade
+- bin/rails db:migrate
+- check the changelog changes for any important change https://github.com/decidim/decidim/blob/0.13-stable/CHANGELOG.md
+- Execute this
+```
+Decidim::User.find_each do |user|
+  user.avatar.recreate_versions! if user.avatar?
+end
+```
+
 ## Decidim 0.12.2
 - Before to deploy this version,
  Please execute this code on production before upgrading so the pages get created correctly and the migrations don't fail.
@@ -12,6 +25,7 @@
 - bin/rails db:migrate
 - check the changelog changes for any important change https://github.com/decidim/decidim/blob/0.12-stable/CHANGELOG.md
 - Execute next on rails console
+
 ```
 Decidim::Meetings::Meeting.find_each(&:add_to_index_as_search_resource)
 Decidim::Proposals::Proposal.find_each(&:add_to_index_as_search_resource)
