@@ -12,13 +12,15 @@ gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
 gem 'figaro', '>= 1.1.1'
 
+gem 'foundation-rails', '6.4.1.3'
+
 gem 'delayed_job_active_record'
 gem "daemons"
 gem 'whenever', require: false
 
 group :development, :test do
   gem "byebug", platform: :mri
-  # gem "faker", "~> 1.8.4"
+  gem "faker", "~> 1.8.4"
   gem "decidim-dev"
 end
 
