@@ -14,6 +14,11 @@ gem 'figaro', '>= 1.1.1'
 # We are forcing foundation rails until fix missing file
 gem "foundation-rails", "~> 6.4.1.3"
 
+## Start force versions Gem
+gem 'graphiql-rails', '1.4.11'
+gem 'graphql', '1.8.10'
+## End force versions Gem
+
 gem 'delayed_job_active_record'
 gem "daemons"
 gem 'whenever', require: false
