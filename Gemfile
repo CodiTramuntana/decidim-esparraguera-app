@@ -5,8 +5,6 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 DECIDIM_VERSION= '0.11.2'
 
-gem "rails", "~> 5.1.4"
-
 gem "decidim", DECIDIM_VERSION
 
 gem "puma", "~> 3.0"
