@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION= '0.15.2'
+DECIDIM_VERSION= '0.16.1'
 
 gem "decidim", DECIDIM_VERSION
 
@@ -15,14 +15,9 @@ gem 'delayed_job_active_record'
 gem "daemons"
 gem 'whenever', require: false
 
-## Start force versions Gem
-gem 'graphiql-rails', '1.4.11'
-gem 'graphql', '1.8.10'
-## End force versions Gem
-
 group :development, :test do
   gem "byebug", platform: :mri
-  # gem "faker", "~> 1.8.4"
+  gem "faker", "~> 1.8.4"
   gem "decidim-dev", DECIDIM_VERSION
 end
 
