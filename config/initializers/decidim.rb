@@ -5,7 +5,7 @@ Decidim.configure do |config|
   config.mailer_sender = "decideix@esparreguera.cat"
 
   # Change these lines to set your preferred locales
-  config.default_locale = :en
+  config.default_locale = :ca
   config.available_locales = [:en, :ca, :es]
 
   # Geocoder configuration
@@ -14,6 +14,9 @@ Decidim.configure do |config|
      here_app_id: Rails.application.secrets.geocoder[:here_app_id],
      here_app_code: Rails.application.secrets.geocoder[:here_app_code]
    }
+
+  # Default app time zone
+  config.time_zone = 'Madrid'
 
   # Custom resource reference generator method
   # config.resource_reference_generator = lambda do |resource, feature|
