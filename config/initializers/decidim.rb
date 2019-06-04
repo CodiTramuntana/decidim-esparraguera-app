@@ -15,9 +15,6 @@ Decidim.configure do |config|
      here_app_code: Rails.application.secrets.geocoder[:here_app_code]
    }
 
-  # Default app time zone
-  config.time_zone = 'Madrid'
-
   # Custom resource reference generator method
   # config.resource_reference_generator = lambda do |resource, feature|
   #   # Implement your custom method to generate resources references
