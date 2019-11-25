@@ -6,7 +6,9 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.19-stable' }
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-term_customizer", git: "https://github.com/CodiTramuntana/decidim-module-term_customizer.git"
+# A Decidim module to customize the localized terms in the system.
+# Read more: https://github.com/mainio/decidim-module-term_customizer
+gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer'
 
 gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
