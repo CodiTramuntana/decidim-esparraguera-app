@@ -10,7 +10,7 @@ gem "decidim", DECIDIM_VERSION
 # Read more: https://github.com/mainio/decidim-module-term_customizer
 gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer'
 
-gem "puma", "~> 3.0"
+gem "puma", "~> 3.12"
 gem "uglifier", ">= 1.3.0"
 gem 'figaro', '>= 1.1.1'
 
