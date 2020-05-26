@@ -14,8 +14,6 @@ gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
 gem 'figaro', '>= 1.1.1'
 
-gem 'actionmailer'
-
 # Force gem version to fix:
 # undefined method `polymorphic?' for ActiveRecord::Reflection::PolymorphicReflection
 # See: https://github.com/activerecord-hackery/ransack/issues/1039
@@ -32,7 +30,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "letter_opener_web"
+  gem "letter_opener_web", "~> 1.3.0"
   gem "listen", "~> 3.1.0"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
