@@ -3,16 +3,18 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.19-stable' }
+DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: '0.20-stable' }
 
 gem "decidim", DECIDIM_VERSION
 # A Decidim module to customize the localized terms in the system.
 # Read more: https://github.com/mainio/decidim-module-term_customizer
-gem "decidim-term_customizer", git: 'https://github.com/mainio/decidim-module-term_customizer'
+gem "decidim-term_customizer", git: 'https://github.com/coditramuntana/decidim-module-term_customizer'
 
 gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
 gem 'figaro', '>= 1.1.1'
+
+gem 'actionmailer'
 
 # Force gem version to fix:
 # undefined method `polymorphic?' for ActiveRecord::Reflection::PolymorphicReflection
@@ -30,7 +32,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "letter_opener_web", "~> 1.3.0"
+  gem "letter_opener_web"
   gem "listen", "~> 3.1.0"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
